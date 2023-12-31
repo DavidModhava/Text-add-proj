@@ -1,0 +1,74 @@
+fda*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.input input{
+    margin: 0px 0px 0px 345px;
+    padding: 8px 39px 7px 31px;
+    border: 2px groove aqua;
+    border-radius: 27px 0px 0px 27px;
+    color: #fff;
+    outline: none;
+    background: #000;
+    opacity: 0.7;
+    font-weight: bold;
+    background: color-mix;
+}
+ .input button{
+    color:  blueviolet;
+    /*! border: none; */
+    padding: 8px 39px 7px 31px;
+    margin-left: -5px;
+    border-radius: 0px 27px 27px 0px;
+    font-weight: bold;
+    opacity: 0.8;
+    border: 2px groove aqua;
+    background: radial-gradient(aqua,lime);
+}
+.kk li{
+    list-style: none;
+    float: left;
+    margin: 61px 0px 0px 43px;
+}
+.tt{
+    background:linear-gradient(90deg,rgb(232, 13, 232),rgb(242, 90, 35));
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+.tt h1{
+    font-size: 30px;
+    padding-top: 23px;
+    font-weight: bold;
+    color: #50e0dd;
+    margin: 0px 0px 44px 406px;
+}
+.tt span{
+    font-size: 30px;
+    padding-top: 23px;
+    font-weight: bold;
+    color: #fff;
+}
+.kk button{
+    color: #50e0dd;
+    border: none;
+    padding: 6px 11px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+.kk input{
+color: #50e0dd;
+width: 23px;
+height: 21px;
+border: none;
+}
+.kk span{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 14px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ADD TEXT TASK.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="ADD TEXT TASK.js"></script>
+    <title>Add Your Typed Text</title>
+</head>
+<body>
+    <div class="container-fluid tt">
+        <div class="container tt1">
+            <h1>Add Your <span>Typed Text</span></h1>
+            <div class="input">
+                <input type="text" placeholder="Add Your Text....." id="ok">
+                <button class="add">ADD Text</button>
+            </div>
+            <div class="kk">
+                <li>
+                    <div class="left-cont">
+                        <label for="check-1"></label>
+                    </div>
+                </li>
+
+            </div>
+
+        </div>
+        <script>
+          $(document).ready(function(){
+            var count = 0;
+            $(".add").click(function(){
+              var inputval = $("#ok").val();
+              if (inputval !='') {
+                count ++;
+                $(".kk").append('<li><div class = "left-cont"><input type="checkbox" id="check-'+count+'"name=""><label for="check-'+count+'"</label><span>'+inputval+'</span></div><button id="remove">close</button></li>');
+              }
+             $("#ok").val('');
+            })
+            $(document).on('chenge','input[type="checkbox"]',function(){
+                if ($(this).is(':cheked')){
+                $(this).closest("li").children(".remove").addClass("active");
+            }else{
+                $(this).closest("li").children(".remove").removeClass("active");
+            }
+        })
+        $(document).on('click','#remove',function(){
+            $(this).parent().remove();
+        })
+          })
+
+    </script>
+</html>
